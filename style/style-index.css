@@ -1,0 +1,75 @@
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+/* Header */
+header {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header form input,
+header form button {
+  padding: 2px;
+}
+
+/* Table */
+table {
+  width: 100%;
+}
+
+table tr.head {
+  background-color: teal;
+  color: #00c7b7;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+table tr th#aksi {
+  min-width: 70px;
+}
+
+table tr .center {
+  text-align: center;
+  margin: auto;
+}
+
+/* Media Breakpoint */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+  }
+  header a {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
